@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+.logo {
+    width: auto;
+    height: auto;
+}
+.welcome-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.center-title {
+    text-align: center;
+}
+
+.welcome-text {
+    flex: 3;
+}
+
+.guide-portrait {
+    flex: 1;
+    text-align: right;
+}
+
+.guide-portrait img {
+    width: 120px;
+    height: auto;
+    border: 3px solid #5C3317;
+    background: rgba(0,0,0,0.2);
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guide-portrait {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+body {
+    background-image:url("images/background.png");
+    background-size: cover;
+}
+.box {
+    font-family: cursive;
+    width: 100%;
+    margin: 0;
+    padding: 15px 25px;   
+    background: linear-gradient(to bottom, #A0522D, #8B4513);
+    color: white;
+    border: 6px solid #5C3317;
+    line-height: 1.6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+.box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #654321;
+    border-radius: 5px;
+}
+
+.navbar a {
+    display: block;
+    padding: 12px 20px;
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #A0522D;
+}
+.icon {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.icon-box {
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.icon-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.feature {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+
+}
+
+.feature h3 {
+    margin: 0;
+}
+
+.feature p {
+    margin-top: 6px;
+}
+
+.feature-img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    margin-top: 5px;
+}
+.map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.biome-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.biome-content p {
+    flex: 3;
+}
+
+.biome-img {
+    flex: 1;
+    max-width: 250px;
+    height: auto;
+}
+.biome-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boss-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.boss-table th,
+.boss-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.boss-table td img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.feedback-box {
+    font-family: cursive;
+    
+    background-color: #5C3317;   /* darker wood */
+    
+    padding: 20px;
+    margin-top: 20px;
+
+    border: 4px solid #3E1F0D;
+    border-radius: 8px;
+
+    color: white;
+}
+.site-footer {
+    text-align: center;
+    padding: 12px;
+
+    background: rgba(0, 0, 0, 0.6);  /* readable on any image */
+    color: white;
+
+    font-size: 14px;
+    backdrop-filter: blur(4px);      /* cool glass effect */
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-footer {
+    margin-top: auto;
+}
